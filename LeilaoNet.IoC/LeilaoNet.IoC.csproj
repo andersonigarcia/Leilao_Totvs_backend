@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LeilaoNet.Application\LeilaoNet.Application.csproj" />
+    <ProjectReference Include="..\LeilaoNet.Data\LeilaoNet.Data.csproj" />
+    <ProjectReference Include="..\LeilaoNet.Domain\LeilaoNet.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

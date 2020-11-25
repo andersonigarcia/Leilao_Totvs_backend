@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Leiloes\Commands\Responses\**" />
+    <EmbeddedResource Remove="Leiloes\Commands\Responses\**" />
+    <None Remove="Leiloes\Commands\Responses\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Leiloes\Handlers\ve-597E.tmp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Produtos\Handlers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LeilaoNet.Data\LeilaoNet.Data.csproj" />
+    <ProjectReference Include="..\LeilaoNet.Domain\LeilaoNet.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
